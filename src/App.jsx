@@ -1,20 +1,18 @@
-import cardFront from './images/CardFront.jpg'
-import cardBack from './images/CardBack.jpg'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Homepage from './Components/Homepage'
+import Card from './Components/Card'
 import './App.css'
 
 function App() {
 
   return (
-    <>
-      <div>
-        <h1>Future Home of Greenwell's Taxidermy</h1>
-        <p>Contact us for pricing and availability at:</p>
-        <div className='cards'>
-        <img src={cardBack} /> <br />
-        <img src={cardFront} />
-        </div>
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path='/businesscard' element={<Card />} />
+        <Route path='/' element={<Homepage />}>
+        </Route>
+      </Routes>
+    </Router>
   )
 }
 
