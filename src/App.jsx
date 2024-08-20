@@ -8,7 +8,7 @@ function App() {
     <>
       <div>
         <h1>Future Home of Greenwell's Taxidermy</h1>
-        <p>Contact us for picing and quotes at:</p>
+        <p>Contact us for pricing and availability at:</p>
         <div className='cards'>
         <img src={cardFront} /> <br />
         <img src={cardBack} />
