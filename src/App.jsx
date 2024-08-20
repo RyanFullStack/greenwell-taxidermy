@@ -10,8 +10,8 @@ function App() {
         <h1>Future Home of Greenwell's Taxidermy</h1>
         <p>Contact us for pricing and availability at:</p>
         <div className='cards'>
-        <img src={cardBack} />
-        <img src={cardFront} /> <br />
+        <img src={cardBack} /> <br />
+        <img src={cardFront} />
         </div>
       </div>
     </>
